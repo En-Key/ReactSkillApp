@@ -5,26 +5,6 @@ const NODE_ENV = process.env.NODE_ENV;
 const IS_DEV = NODE_ENV === 'development';
 const IS_PROD = NODE_ENV === 'production';
 
-// "build:dev": "env NODE_ENV=development webpack --config webpack.config.js",
-// "build:prod": "env NODE_ENV=production webpack --config webpack.config.js",
-// module.exports = (env) => {
-//     const isDev = env.MODE === "development";
-  
-//     // "build": "webpack --env MODE=production",
-//     // "start": "webpack serve --env MODE=development"
-  
-//     return {
-//       mode: env.MODE,
-//       devtool: isDev ? "inline-source-map" : false,
-//       devServer: isDev
-//         ? {
-//             open: true,
-//             hot: true,
-//             port: 3000,
-//           }
-//         : undefined,
-  
-
 console.log(NODE_ENV);
 
 function setupDevtool() {
